@@ -11,13 +11,11 @@ function calc() {
 }
 
 function showResult() {
-  const box = document.querySelector(".result-box")
+  const box = document.querySelector(".result-display")
   const background = document.querySelector(".gradient")
   const display = document.querySelector(".result-display")
   box.style.display = "flex"
-  box.style.opacity = "1"
   background.style.display = "block"
-  background.style.opacity = "1"
   display.innerHTML = calc()
 }
 
