@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Sorteador Numérico</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Sorteador Númerico</h1>
+      <img src="./assets/logo.png" alt="Sorteio" title="Sorteador Númerico"/>
+    </div>
+    <div class="draw-box">
+      <h2>
+        <label for="number">Sortear número entre:</label>
+      </h2>
+      <input type="number" name="number" class="input-min" id="number" autofocus/>
+      <span>e</span>
+      <input type="number" name="number" class="input-max" id="second-number" />
+      <button title="Sortear" class="draw-button">Sortear</button>
+    </div>
+    <div class="footer">
+      <h4>
+        Copyright &copy; 2023 - Desenvolvido por
+        <strong>
+          <a href="https://www.linkedin.com/in/lauropjdutra/" target="_blank" title="Lauro Dutra | LinkedIn">Lauro Dutra</a>
+        </strong>
+      </h4>
+    </div>
+    <div class="result-box">
+      <img src="./assets/celebracao.png" alt="Mulher celebrando o resultado do sorteio">
+      <p>O número sorteado foi:</p>
+      <h3 class="result-display">X</h3>
+      <a href="./index.html">
+        <button id="again-button" title="Repetir">Repetir</button>
+      </a>
+      <a href="/"></a>
+        <button class="exit-button" title="Sair">Sair</button>
+      </a>
+    </div>
+    <div class="gradient"></div>
+  </body>
+  <script src="./script.js"></script>
+</html>
