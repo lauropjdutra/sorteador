@@ -35,7 +35,7 @@ img {
 
 h1 {
   color: #F2DF7E;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
 }
 
 .draw-box {
@@ -44,12 +44,12 @@ h1 {
 
 h2 {
   color: #fefefe;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
 input {
-  width: 7rem;
+  width: 8rem;
   margin: 1rem;
   padding: 0.6rem 1rem;
   background: none;
@@ -57,7 +57,7 @@ input {
   border-radius: 0.5rem;
   outline: none;
   color: #F2AA6B;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 900;
 }
@@ -69,7 +69,7 @@ input::-webkit-inner-spin-button {
 }
 
 span {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #fefefe;
 }
 
@@ -79,7 +79,7 @@ span {
   padding: 0.8rem 3.5rem;
   color: #fefefe;
   background: #f34141;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   border: none;
   border-radius: 0.5rem;
@@ -107,7 +107,7 @@ span {
 }
 
 .result-box  {
-  width: 25rem;
+  width: 22.5rem;
   height: 35rem;
   background: url("./assets/bg.jpg");
   background-position: top;
