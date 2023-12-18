@@ -1,5 +1,6 @@
 // Elementos do DOM
 const button = document.querySelector(".draw-button");
+const button2 = document.querySelector("#again-button")
 const input = document.querySelector(".input-max");
 
 // INÍCIO DA FUNÇÃO CALC
@@ -11,17 +12,16 @@ function calc() {
 }
 
 function showResult() {
-  const box = document.querySelector(".result-box")
+  const box = document.querySelector(".center-display")
   const background = document.querySelector(".gradient")
   const display = document.querySelector(".result-display")
   box.style.display = "flex"
-  box.style.opacity = "1"
   background.style.display = "block"
-  background.style.opacity = "1"
   display.innerHTML = calc()
 }
 
 button.addEventListener("click", showResult);
+button2.addEventListener("click", showResult);
 input.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
