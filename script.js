@@ -26,6 +26,7 @@ function showResult() {
     box.style.display = "flex";
     background.style.display = "block";
     display.innerHTML = calc();
+
     // Data e horário do sorteio
     let date = new Date();
     let seconds = date.getSeconds();
@@ -34,12 +35,23 @@ function showResult() {
     let year = date.getFullYear();
     let month = date.getMonth(); // beware: January = 0; February = 1, etc.
     let day = date.getDate();
+
     if (day < 10) {
       day = "0" + day;
     }
     if (month < 10) {
       month = `0${month}`;
     }
+    if (hour < 10) {
+      hour = `0${hour}`;
+    }
+    if (minutes < 10) {
+      minutes = `0${minutes}`;
+    }
+    if (seconds < 10) {
+      seconds = `0${seconds}`;
+    }
+
     let formatDate = `${day}/${++month}/${year}`;
     let formatHour = `${hour}:${minutes}:${seconds}`;
     currentDate.innerHTML = `Sorteiro realizado em ${formatDate} às ${formatHour}`;
