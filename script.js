@@ -1,23 +1,49 @@
 // Elementos do DOM
 const button = document.querySelector(".draw-button");
-const button2 = document.querySelector("#again-button")
+const button2 = document.querySelector("#again-button");
 const input = document.querySelector(".input-max");
+const box = document.querySelector(".center-display");
+const background = document.querySelector(".gradient");
+const display = document.querySelector(".result-display");
+const currentDate = document.querySelector(".time-info");
 
-// INÍCIO DA FUNÇÃO CALC
+// Cálculo do sorteio
 function calc() {
-  const min = Math.ceil(document.querySelector(".input-min").value)
-  const max = Math.floor(document.querySelector(".input-max").value)
-  const result = Math.floor(Math.random() * (max - min + 1) ) + min
-  return result
+  const min = Math.ceil(document.querySelector(".input-min").value);
+  const max = Math.floor(document.querySelector(".input-max").value);
+  const result = Math.floor(Math.random() * (max - min + 1)) + min;
+  return result;
 }
 
+// Exibição do resultado
 function showResult() {
-  const box = document.querySelector(".center-display")
-  const background = document.querySelector(".gradient")
-  const display = document.querySelector(".result-display")
-  box.style.display = "flex"
-  background.style.display = "block"
-  display.innerHTML = calc()
+  if (
+    document.querySelector(".input-min").value >=
+    document.querySelector(".input-max").value
+  ) {
+    alert("Por favor, escolha um número maior e diferente do primeiro.");
+  } else {
+    box.style.display = "flex";
+    background.style.display = "block";
+    display.innerHTML = calc();
+    // Data e horário do sorteio
+    let date = new Date();
+    let seconds = date.getSeconds();
+    let minutes = date.getMinutes();
+    let hour = date.getHours();
+    let year = date.getFullYear();
+    let month = date.getMonth(); // beware: January = 0; February = 1, etc.
+    let day = date.getDate();
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = `0${month}`;
+    }
+    let formatDate = `${day}/${++month}/${year}`;
+    let formatHour = `${hour}:${minutes}:${seconds}`;
+    currentDate.innerHTML = `Sorteiro realizado em ${formatDate} às ${formatHour}`;
+  }
 }
 
 button.addEventListener("click", showResult);

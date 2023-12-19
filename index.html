@@ -9,12 +9,12 @@
   </head>
   <body>
     <div class="header">
-      <h1>Sorteador Númerico</h1>
-      <img src="./assets/logo.png" alt="Sorteio" title="Sorteador Númerico"/>
+      <h1>Sorteio</h1>
+      <img src="./assets/logo.png" alt="Sorteio" title="Sorteador"/>
     </div>
     <div class="draw-box">
       <h2>
-        <label for="number">Sortear número entre:</label>
+        <label for="number">Sortear um número entre:</label>
       </h2>
       <input type="number" name="number" class="input-min" id="number" autofocus/>
       <span>e</span>
@@ -31,9 +31,10 @@
     </div>
     <div class="center-display">
       <div class="result-box">
-        <img src="./assets/celebracao.png" alt="Mulher celebrando o resultado do sorteio">
+        <img src="./assets/celebracao.png" alt="Mulher celebrando o resultado do sorteio" class="result-img">
         <p>O número sorteado foi:</p>
         <h3 class="result-display">X</h3>
+        <span class="time-info">Sorteio realizado em <b>XX/XX/XXXX</b> às <b>XX:XX</b></span>
         <button id="again-button" title="Repetir este sorteio">Repetir</button>
         <a href="./index.html">
           <button class="exit-button" title="Sair para um novo sorteio">Sair</button>
