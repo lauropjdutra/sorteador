@@ -3,45 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./assets/celebracao.png" type="image/x-icon">
-    <title>Sorteador Numérico</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/celebracao.png"
+      type="image/x-icon"
+    />
+    <title>Sorteador</title>
   </head>
   <body>
-    <div class="header">
-      <h1>Sorteio</h1>
-      <img src="./assets/logo.png" alt="Sorteio" title="Sorteador"/>
-    </div>
-    <div class="draw-box">
-      <h2>
-        <label for="number">Sortear um número entre:</label>
-      </h2>
-      <input type="number" name="number" class="input-min" id="number" autofocus/>
-      <span>e</span>
-      <input type="number" name="number" class="input-max" id="second-number" />
-      <button title="Sortear" class="draw-button">Sortear</button>
-    </div>
-    <div class="footer">
-      <h4>
-        Copyright &copy; 2023 - Desenvolvido por
-        <strong>
-          <a class="contact" href="https://www.linkedin.com/in/lauropjdutra/" target="_blank" title="Lauro Dutra | LinkedIn">Lauro Dutra</a>
-        </strong>
-      </h4>
-    </div>
-    <div class="center-display">
-      <div class="result-box">
-        <img src="./assets/celebracao.png" alt="Mulher celebrando o resultado do sorteio" class="result-img">
-        <p>O número sorteado foi:</p>
-        <h3 class="result-display">X</h3>
-        <span class="time-info">Sorteio realizado em <b>XX/XX/XXXX</b> às <b>XX:XX</b></span>
-        <button id="again-button" title="Repetir este sorteio">Repetir</button>
-        <a href="./index.html">
-          <button class="exit-button" title="Sair para um novo sorteio">Sair</button>
-        </a>
+    <main>
+      <div class="header">
+        <h1>Sorteio</h1>
+        <img src="./assets/logo.png" alt="Sorteio" title="Sorteador" />
       </div>
-    </div>
-    <div class="gradient"></div>
+      <div class="draw-box">
+        <h2>
+          <label for="number">Sortear um número entre:</label>
+        </h2>
+        <input
+          type="number"
+          name="number"
+          class="input-min"
+          id="number"
+          autofocus
+        />
+        <span>e</span>
+        <input
+          type="number"
+          name="number"
+          class="input-max"
+          id="second-number"
+        />
+        <button title="Sortear" class="draw-button">Sortear</button>
+      </div>
+      <div class="footer">
+        <h4>
+          Copyright &copy; 2023 - Desenvolvido por
+          <strong>
+            <a
+              class="contact"
+              href="https://www.linkedin.com/in/lauropjdutra/"
+              target="_blank"
+              title="Lauro Dutra | LinkedIn"
+              >Lauro Dutra</a
+            >
+          </strong>
+        </h4>
+      </div>
+      <div class="center-display">
+        <div class="result-box">
+          <div class="glow-result">
+            <img
+              src="./assets/celebracao.png"
+              alt="Mulher celebrando o resultado do sorteio"
+              class="result-img"
+            />
+          </div>
+          <p>O número sorteado foi:</p>
+          <h3 class="result-display">X</h3>
+          <span class="time-info"
+            >Sorteio realizado em <b>XX/XX/XXXX</b> às <b>XX:XX</b></span
+          >
+          <button id="again-button" title="Repetir este sorteio">
+            Repetir
+          </button>
+          <a href="./index.html">
+            <button class="exit-button" title="Sair para um novo sorteio">
+              Sair
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="gradient"></div>
+    </main>
   </body>
   <script src="./script.js"></script>
 </html>

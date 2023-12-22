@@ -21,7 +21,7 @@ function showResult() {
     document.querySelector(".input-min").value >=
     document.querySelector(".input-max").value
   ) {
-    alert("Por favor, escolha um número maior e diferente do primeiro.");
+    alert("Por favor, digite outro número.");
   } else {
     box.style.display = "flex";
     background.style.display = "block";
@@ -33,7 +33,7 @@ function showResult() {
     let minutes = date.getMinutes();
     let hour = date.getHours();
     let year = date.getFullYear();
-    let month = date.getMonth(); // beware: January = 0; February = 1, etc.
+    let month = date.getMonth();
     let day = date.getDate();
 
     if (day < 10) {
@@ -58,6 +58,7 @@ function showResult() {
   }
 }
 
+// Eventos
 button.addEventListener("click", showResult);
 button2.addEventListener("click", showResult);
 input.addEventListener("keypress", function (event) {
